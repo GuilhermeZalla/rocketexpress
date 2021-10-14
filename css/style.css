@@ -112,7 +112,7 @@ a {
     flex-direction: column;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     .container-section__sobrenos--content,
     .container-section__nossoservico {
         margin-left: 2%;
@@ -285,7 +285,7 @@ a {
     transition: var(--hoverable-transition);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     .is-desktop {
         display: none;
     }
@@ -385,29 +385,15 @@ a {
     margin-top: 1.6rem;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     .apresentacao {
         height: 900px;
     }
     .section-apresentacao__text {
         margin-top: 3.4rem;
-        margin-right: 15%;
     }
     .section-apresentacao__text--title {
         font-size: 2.2rem;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .apresentacao {
-        height: 1140px;
-    }
-    .section-apresentacao__text {
-        margin-top: 3.4rem;
-        margin-right: 15%;
-    }
-    .section-apresentacao__text--title {
-        font-size: 2.8rem;
     }
 }
 
@@ -493,7 +479,7 @@ a {
     opacity: .7;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     .sobrenos {
         height: 1130px;
     }
@@ -615,7 +601,7 @@ a {
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     .nossoservico {
         height: 1150px;
     }
@@ -771,13 +757,19 @@ a {
     text-align: center;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     .vantagens {
-        height: 2300px;
+        height: 2140px;
     }
     .section-vantagens__content {
         flex-direction: column;
         text-align: center;
+    }
+    .vantagens-content__title {
+        font-size: 1.3rem;
+    }
+    .vantagens-content__subtitle {
+        font-size: .98rem;
     }
     .content-text {
         text-align: center;
@@ -862,7 +854,7 @@ a {
     line-height: .7cm;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     .produtos {
         height: 2330px;
     }
@@ -964,4 +956,13 @@ a {
     font-family: var(--font--text);
     font-weight: 600;
     font-size: 1.0rem;
+}
+
+@media screen and (max-width: 600px) {
+    .is-white {
+        font-size: 1.3rem;
+    }
+    .is-red {
+        font-size: .95rem;
+    }
 }
