@@ -20,11 +20,11 @@
             <div class="navbar-logo">
                 <a class="navbar-logo__anchor--hoverable" href="#"><img src="assets/logo.svg" alt="rocket express logo" width="195" fill="white"></a>
             </div>
-            <ul class="navbar-list">
+            <ul class="navbar-list is-desktop">
                 <li class="navbar-item"><a class="item__link" href="">HELP</a></li>
                 <li class="navbar-item"><a class="item__link" href="">SIGN IN</a></li>
             </ul>
-            <div class="navbar-dropdown">
+            <div class="navbar-dropdown is-desktop">
                 <div class="dropdown">
                     <button class="dropbtn">ENGLISH &nbsp;
                                     <i class="fa fa-caret-down"></i>
@@ -38,11 +38,11 @@
                     </div>
                 </div>
             </div>
-            <div class="navbar-input">
+            <div class="navbar-input is-desktop">
                 <i class="fa fa-search icon"></i>
                 <input class="input-search" type="text" name="search">
             </div>
-            <button type="button" name="get-started" class="navbar-btn__link">GET STARTED</button>
+            <button type="button" name="get-started" class="navbar-btn__link is-desktop">GET STARTED</button>
         </nav>
     </header>
     <!--Header-->
@@ -55,7 +55,10 @@
                 <p class="section-apresentacao__text--paragraph">No commitment. No hidden costs.</p>
             </article>
             <div class="section-apresentacao__img">
-                <img src="assets/cover.png" alt="Imagem iustração do serviço" width="520">
+                <picture>
+                    <source media="(max-width: 800px)" srcset="assets/cover_380.png" type="image/png">
+                    <img src="assets/cover.png" alt="Imagem iustração do serviço">
+                </picture>
             </div>
         </div>
     </section>
@@ -95,21 +98,29 @@
                     <img class="content-img__step--3" src="assets/how-step3.svg" alt="how step 3" width="136">
                     <img class="content-img__step--4" src="assets/how-step4.svg" alt="how step 4" width="128">
                 </div>
-                <img class="nossoservico-content__img--flow" src="assets/flow.png" alt="serivice flow">
+                <img class="nossoservico-content__img--flow" src="assets/flow.png" alt="service flow">
                 <div class="nossoservico-content__img--text">
                     <div class="content-img__text--1 content-img__box">
+                        <img class="content-img__step--1 is-mobile" src="assets/how-step1.svg" alt="how step 1" width="128"><br>
+                        <img class="content-img__step--1 is-mobile" src="assets/flow_bkp_1.svg" alt="how step 1" width="32">
                         <h3 class="img-text__title">Tell us what to buy</h3>
                         <h4 class="img-text__subtitle"> Add your items for an instant quote.</h4>
                     </div>
                     <div class="content-img__text--2 content-img__box">
+                        <img class="content-img__step--2 is-mobile" src="assets/how-step2.svg" alt="how step 2" width="128"><br>
+                        <img class="content-img__step--1 is-mobile" src="assets/flow_bkp_2.svg" alt="how step 1" width="32">
                         <h3 class="img-text__title">Check Out</h3>
                         <h4 class="img-text__subtitle">Sign-in to checkout. It’s so simple.</h4>
                     </div>
                     <div class="content-img__text--3 content-img__box">
+                        <img class="content-img__step--3 is-mobile" src="assets/how-step3.svg" alt="how step 3" width="136"><br>
+                        <img class="content-img__step--1 is-mobile" src="assets/flow_bkp_3.svg" alt="how step 1" width="32">
                         <h3 class="img-text__title">We buy your items</h3>
                         <h4 class="img-text__subtitle">We’ll send email alerts as your order progresses.</h4>
                     </div>
                     <div class="content-img__text--4 content-img__box">
+                        <img class="content-img__step--4 is-mobile" src="assets/how-step4.svg" alt="how step 4" width="128"><br>
+                        <img class="content-img__step--1 is-mobile" src="assets/flow_bkp_4.svg" alt="how step 1" width="32">
                         <h3 class="img-text__title">We ship your package</h3>
                         <h4 class="img-text__subtitle">Select a shipping method. Combine packages and save.</h4>
                     </div>
@@ -122,7 +133,7 @@
     <section class="vantagens">
         <div class="container-section__vantagens">
             <div class="section-vantagens__content">
-                <div class="content-img">
+                <div class="content-img ml-10">
                     <img class="vantagens-content__img--left" src="assets/reason-1.svg" alt="reason 1 to buy with us" width="142">
                 </div>
                 <div class="content-text">
@@ -131,16 +142,19 @@
                 </div>
             </div>
             <div class="section-vantagens__content">
+                <div class="content-img is-mobile mr-20">
+                    <img class="vantagens-content__img--right" src="assets/reason-2.svg" alt="reason 2 to buy with us">
+                </div>
                 <div class="content-text">
                     <h2 class="vantagens-content__title">Get a Quote, Instantly</h2>
                     <h3 class="vantagens-content__subtitle">Add the items you want to buy for an instant quote. It’s so fast and simple.</h3>
                 </div>
-                <div class="content-img">
+                <div class="content-img is-widescreen">
                     <img class="vantagens-content__img--right" src="assets/reason-2.svg" alt="reason 2 to buy with us">
                 </div>
             </div>
             <div class="section-vantagens__content">
-                <div class="content-img">
+                <div class="content-img ml-20">
                     <img class="vantagens-content__img--left" src="assets/reason-3.svg" alt="reason 3 to buy with us" width="128">
                 </div>
                 <div class="content-text">
@@ -149,11 +163,14 @@
                 </div>
             </div>
             <div class="section-vantagens__content">
+                <div class="content-img is-mobile mr-10">
+                    <img class="vantagens-content__img--right" src="assets/reason-4.svg" alt="reason 4 to buy with us" width="142">
+                </div>
                 <div class="content-text">
                     <h2 class="vantagens-content__title">Mobile-Friendly.</h2>
                     <h3 class="vantagens-content__subtitle">Create orders and ship packages on-the-go. We work great on smartphones and tablets.</h3>
                 </div>
-                <div class="content-img">
+                <div class="content-img is-widescreen">
                     <img class="vantagens-content__img--right" src="assets/reason-4.svg" alt="reason 4 to buy with us" width="142">
                 </div>
             </div>
@@ -167,10 +184,13 @@
                             <li class="vantagens-proud__itemlist">Personal assistance</li>
                             <li class="vantagens-proud__itemlist">Free consolidation</li>
                             <li class="vantagens-proud__itemlist">Free repacking</li>
+                            <li class="vantagens-proud__itemlist is-mobile">Live chat</li>
+                            <li class="vantagens-proud__itemlist is-mobile">Real-time order status</li>
+                            <li class="vantagens-proud__itemlist is-mobile">We handle pre-orders</li>
                         </ul>
                     </div>
                     <div class="section-vantagens__proud--right">
-                        <ul class="section-vantagens__proud--list">
+                        <ul class="section-vantagens__proud--list is-widescreen">
                             <li class="vantagens-proud__itemlist">Live chat</li>
                             <li class="vantagens-proud__itemlist">Real-time order status</li>
                             <li class="vantagens-proud__itemlist">We handle pre-orders</li>
@@ -183,7 +203,8 @@
                 <button class="section-vantagens__button--click" type="button" id="button-vantagens">ADD AN ITEM</button>
             </div>
             <div class="section-vantagens__illustration">
-                <img src="assets/shop.svg" alt="buy any products you want" width="560">
+
+                <img src="assets/shop.svg" alt="buy any products you want" width="450">
             </div>
         </div>
     </section>

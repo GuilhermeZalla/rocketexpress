@@ -111,6 +111,17 @@ a {
     flex-direction: column;
 }
 
+@media screen and (max-width: 800px) {
+    .container-section__sobrenos--content,
+    .container-section__nossoservico {
+        margin-left: 2%;
+        flex-direction: unset;
+    }
+    .container-section__produtos {
+        flex-direction: unset;
+    }
+}
+
 
 /**************/
 
@@ -273,6 +284,25 @@ a {
     transition: var(--hoverable-transition);
 }
 
+@media screen and (max-width: 800px) {
+    .is-desktop {
+        display: none;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        justify-items: center;
+        align-items: center;
+    }
+    .navbar-logo {
+        padding-left: 0;
+    }
+    .navbar-logo__anchor--hoverable:hover {
+        background-color: transparent;
+        transition: 0;
+    }
+}
+
 
 /**************/
 
@@ -283,7 +313,7 @@ a {
 /**************/
 
 .apresentacao {
-    height: 660px;
+    height: 700px;
     font-family: var(--font--title);
     background-color: var(--clr--medium-white);
     padding-top: 3.8rem;
@@ -298,6 +328,19 @@ a {
     font-weight: 200;
     letter-spacing: .03cm;
     line-height: 1.3cm;
+}
+
+@media screen and (max-width: 800px) {
+    .apresentacao {
+        height: 900px;
+    }
+    .section-apresentacao__text {
+        margin-top: 3.4rem;
+        margin-right: 15%;
+    }
+    .section-apresentacao__text--title {
+        font-size: 2.2rem;
+    }
 }
 
 .section-apresentacao__text--subtitle {
@@ -417,6 +460,28 @@ a {
     opacity: .7;
 }
 
+@media screen and (max-width: 800px) {
+    .sobrenos {
+        height: 1130px;
+    }
+    .section-sobrenos__text--title {
+        font-size: 1.4rem;
+    }
+    .section-sobrenos__text--subtitle {
+        font-size: 1.2rem;
+    }
+    .section-sobrenos__list {
+        width: 360px;
+    }
+    .section-sobrenos__hr--end {
+        width: 100%;
+    }
+    .section-sobrenos__text--paragraph {
+        width: 350px;
+        font-size: 1.2rem;
+    }
+}
+
 
 /**************/
 
@@ -489,6 +554,36 @@ a {
     margin-top: 4.0rem;
 }
 
+@media screen and (min-width: 992px) {
+    .is-mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .nossoservico {
+        height: 1150px;
+    }
+    .nossservico-content__img--content {
+        flex-direction: column;
+    }
+    .nossoservico-content__img--flow {
+        display: none;
+    }
+    .section-nossoservico__hr {
+        width: 100%;
+    }
+    .nossservico-content__img--content {
+        display: none;
+    }
+    .nossoservico-content__img--text {
+        flex-direction: column;
+    }
+    .content-img__box {
+        margin-top: .55rem;
+    }
+}
+
 
 /**************/
 
@@ -507,9 +602,6 @@ a {
     justify-content: center;
     align-items: center;
     flex: wrap;
-}
-
-.section-vantagens__content {
     margin-bottom: 4.2rem;
 }
 
@@ -618,6 +710,41 @@ a {
     text-align: center;
 }
 
+@media screen and (max-width: 800px) {
+    .vantagens {
+        height: 2300px;
+    }
+    .section-vantagens__content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .content-text {
+        text-align: center;
+    }
+    .is-widescreen {
+        display: none;
+    }
+    .content-img {
+        margin-bottom: 1.6rem;
+    }
+    .section-vantagens__proud--left {
+        border: 0;
+        margin: auto;
+    }
+    .mr-10 {
+        margin-right: 10%;
+    }
+    .ml-10 {
+        margin-left: 10%;
+    }
+    .mr-20 {
+        margin-right: 20%;
+    }
+    .ml-20 {
+        margin-left: 20%;
+    }
+}
+
 
 /**************/
 
@@ -644,7 +771,6 @@ a {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    flex-direction: row;
     margin-bottom: 2.8rem;
 }
 
@@ -675,6 +801,15 @@ a {
     line-height: .7cm;
 }
 
+@media screen and (max-width: 800px) {
+    .produtos {
+        height: 2330px;
+    }
+    .section-produtos__content--flex {
+        flex-direction: column;
+    }
+}
+
 
 /**************/
 
@@ -686,11 +821,11 @@ a {
 
 .empresa {
     background-color: var(--clr--blue-dark);
-    height: 780px;
+    height: 750px;
 }
 
 .section-empresa__logo {
-    margin-top: 2.4rem;
+    margin-top: 2.2rem;
 }
 
 .section-empresa__title {
