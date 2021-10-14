@@ -36,6 +36,7 @@
     --clr--black: rgb(0, 0, 0);
     --clr--medium-red: rgb(204, 35, 42);
     --clr--hover-transition: rgb(245, 172, 39);
+    --clr--hover-transition-burguer: rgba(231, 154, 10, 0.418);
     --clr--blue-dark: rgb(40, 45, 60);
     --font--text: 'Open Sans', sans-serif;
     --font--title: 'Inter', sans-serif;
@@ -303,6 +304,25 @@ a {
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .is-desktop {
+        display: none;
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        justify-items: center;
+        align-items: center;
+    }
+    .navbar-logo {
+        padding-left: 0;
+    }
+    .navbar-logo__anchor--hoverable:hover {
+        background-color: transparent;
+        transition: 0;
+    }
+}
+
 
 /**************/
 
@@ -328,19 +348,6 @@ a {
     font-weight: 200;
     letter-spacing: .03cm;
     line-height: 1.3cm;
-}
-
-@media screen and (max-width: 800px) {
-    .apresentacao {
-        height: 900px;
-    }
-    .section-apresentacao__text {
-        margin-top: 3.4rem;
-        margin-right: 15%;
-    }
-    .section-apresentacao__text--title {
-        font-size: 2.2rem;
-    }
 }
 
 .section-apresentacao__text--subtitle {
@@ -376,6 +383,32 @@ a {
     font-family: var(--font--text);
     font-size: 0.8rem;
     margin-top: 1.6rem;
+}
+
+@media screen and (max-width: 800px) {
+    .apresentacao {
+        height: 900px;
+    }
+    .section-apresentacao__text {
+        margin-top: 3.4rem;
+        margin-right: 15%;
+    }
+    .section-apresentacao__text--title {
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .apresentacao {
+        height: 1140px;
+    }
+    .section-apresentacao__text {
+        margin-top: 3.4rem;
+        margin-right: 15%;
+    }
+    .section-apresentacao__text--title {
+        font-size: 2.8rem;
+    }
 }
 
 
@@ -461,6 +494,28 @@ a {
 }
 
 @media screen and (max-width: 800px) {
+    .sobrenos {
+        height: 1130px;
+    }
+    .section-sobrenos__text--title {
+        font-size: 1.4rem;
+    }
+    .section-sobrenos__text--subtitle {
+        font-size: 1.2rem;
+    }
+    .section-sobrenos__list {
+        width: 360px;
+    }
+    .section-sobrenos__hr--end {
+        width: 100%;
+    }
+    .section-sobrenos__text--paragraph {
+        width: 350px;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
     .sobrenos {
         height: 1130px;
     }
@@ -581,6 +636,12 @@ a {
     }
     .content-img__box {
         margin-top: .55rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .section-nossoservico__text--title {
+        margin-top: .45rem;
     }
 }
 
