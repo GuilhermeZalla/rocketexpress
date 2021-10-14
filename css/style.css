@@ -766,10 +766,10 @@ a {
         text-align: center;
     }
     .vantagens-content__title {
-        font-size: 1.3rem;
+        font-size: 1.0rem;
     }
     .vantagens-content__subtitle {
-        font-size: .98rem;
+        font-size: .90rem;
     }
     .content-text {
         text-align: center;
@@ -960,9 +960,9 @@ a {
 
 @media screen and (max-width: 600px) {
     .is-white {
-        font-size: 1.3rem;
+        font-size: 1.0rem;
     }
     .is-red {
-        font-size: .95rem;
+        font-size: .75rem;
     }
 }
