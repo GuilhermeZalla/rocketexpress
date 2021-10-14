@@ -6,4 +6,4 @@
 * O projeto foi desenvolvido utilizando a nomenclatura para CSS Block Element Modifier (BEM).
 * O projeto me ajudou a entender de uma maneira mais clara como funciona o Flexbox e fixar conceitos de CSS e HTML.
 
-**link para o site: [Rocket Express](https://rockextexpress.netlify.app/)**
+**link para o site: [Rocket Express](https://rocketexpress.netlify.app/)**
