@@ -977,3 +977,12 @@ a {
         font-size: .75rem;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .is-white {
+        font-size: 1.0rem;
+    }
+    .is-red {
+        font-size: .75rem;
+    }
+}
