@@ -392,7 +392,7 @@ a {
     }
     .section-apresentacao__text {
         margin-top: 3.4rem;
-        margin-left: 2%;
+        margin-left: 3%;
     }
     .section-apresentacao__text--title {
         font-size: 2.2rem;
@@ -490,13 +490,15 @@ a {
         height: 1130px;
     }
     .section-sobrenos__text--title {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
+        margin-top: 2.6rem;
     }
     .section-sobrenos__text--subtitle {
-        font-size: 1.2rem;
+        font-size: 1.0rem;
     }
     .section-sobrenos__list {
         width: 360px;
+        border: 0;
     }
     .section-sobrenos__hr--end {
         width: 100%;
