@@ -21,7 +21,6 @@
 /* 8. Produtos
 /* 9. Empresa
 /* 10. Redes Sociais
-
 /**************/
 
 
@@ -388,7 +387,36 @@ button {
 .section-apresentacao__text--paragraph {
     font-family: var(--font--text);
     font-size: 0.8rem;
-    margin-top: 1.6rem;
+    margin-top: 1.3rem;
+}
+
+@media screen and (max-width: 600px) {
+    .apresentacao {
+        height: 850px;
+    }
+    .section-apresentacao__text {
+        margin-top: 3.4rem;
+        margin-left: 3%;
+    }
+    .section-apresentacao__text--title {
+        font-size: 2.2rem;
+    }
+    .section-apresentacao__text--subtitle {
+        font-size: .95rem;
+    }
+    .get-started__button,
+    .section-apresentacao__text--paragraph {
+        margin-left: 5%;
+    }
+    .get-started__button {
+        margin-top: 3.4rem;
+        font-size: .97rem;
+    }
+    .section-apresentacao__text--paragraph {
+        font-family: var(--font--text);
+        font-size: .70rem;
+        margin-top: 1.3rem;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -495,11 +523,17 @@ button {
         height: 1130px;
     }
     .section-sobrenos__text--title {
-        font-size: 1.2rem;
+        <<<<<<< HEAD font-size: 1.2rem;
         margin-top: 2.6rem;
     }
     .section-sobrenos__text--subtitle {
         font-size: 1.0rem;
+        =======font-size: 1.0rem;
+        margin-top: 2.6rem;
+    }
+    .section-sobrenos__text--subtitle {
+        font-size: .97rem;
+        >>>>>>>css
     }
     .section-sobrenos__list {
         width: 360px;
@@ -510,7 +544,9 @@ button {
     }
     .section-sobrenos__text--paragraph {
         width: 350px;
-        font-size: 1.2rem;
+        <<<<<<< HEAD font-size: 1.2rem;
+        =======font-size: 1.0rem;
+        >>>>>>>css
     }
 }
 
@@ -639,6 +675,13 @@ button {
     .section-nossoservico__text {
         margin-top: 2.6rem;
     }
+    <<<<<<< HEAD=======.section-nossoservico__text--title {
+        font-size: 1.5rem;
+    }
+    .section-nossoservico__text--subtitle {
+        font-size: 1.1rem;
+    }
+    >>>>>>>css
 }
 
 @media screen and (max-width: 1024px) {
@@ -763,7 +806,7 @@ button {
     font-size: 1.2rem;
     font-weight: 500;
     text-align: center;
-    margin-top: 4.8rem;
+    margin-top: 3.6rem;
 }
 
 .section-vantagens__button--click:hover {
@@ -877,10 +920,16 @@ button {
 
 @media screen and (max-width: 600px) {
     .produtos {
-        height: 2330px;
+        height: 2300px;
     }
     .section-produtos__content--flex {
         flex-direction: column;
+    }
+    .section-produtos__content--title {
+        font-size: 1.7rem;
+    }
+    .produtos__content--title {
+        margin: 3.4rem 0 1.6rem 0;
     }
 }
 
