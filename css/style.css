@@ -21,7 +21,6 @@
 /* 8. Produtos
 /* 9. Empresa
 /* 10. Redes Sociais
-
 /**************/
 
 
@@ -62,6 +61,10 @@ body {
 
 a {
     text-decoration: none;
+}
+
+button {
+    cursor: pointer;
 }
 
 
@@ -112,7 +115,7 @@ a {
     flex-direction: column;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     .container-section__sobrenos--content,
     .container-section__nossoservico {
         margin-left: 2%;
@@ -138,6 +141,7 @@ a {
     background-color: var(--clr--medium-red);
     position: fixed;
     color: var(--clr--white);
+    box-shadow: 0px 1px 2px 0px #0000007d;
 }
 
 .navbar {
@@ -205,7 +209,7 @@ a {
     margin-left: 8%;
     border: 1px solid rgba(0, 0, 0, 0.034);
     border-radius: 3px;
-    padding: 8px 0px 8px 40px;
+    padding: 8px 8px 8px 35px;
     outline: none;
     max-width: 180px;
     font-size: 1.0rem;
@@ -276,7 +280,7 @@ a {
     padding: 16px;
     font-family: var(--font--title);
     font-weight: 800;
-    margin-left: 3%;
+    margin-left: 2%;
 }
 
 .navbar-btn__link:hover {
@@ -285,7 +289,7 @@ a {
     transition: var(--hoverable-transition);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     .is-desktop {
         display: none;
     }
@@ -355,6 +359,7 @@ a {
     font-weight: normal;
     line-height: .8cm;
     letter-spacing: .03cm;
+    width: 320px;
 }
 
 .section-apresentacao__img {
@@ -366,7 +371,7 @@ a {
     background-color: var(--clr--medium-red);
     color: var(--clr--white);
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 18px 35px 18px 35px;
     font-family: var(--font--text);
     font-weight: 800;
@@ -382,32 +387,35 @@ a {
 .section-apresentacao__text--paragraph {
     font-family: var(--font--text);
     font-size: 0.8rem;
-    margin-top: 1.6rem;
+    margin-top: 1.3rem;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     .apresentacao {
-        height: 900px;
+        height: 850px;
     }
     .section-apresentacao__text {
         margin-top: 3.4rem;
-        margin-right: 15%;
+        margin-left: 3%;
     }
     .section-apresentacao__text--title {
         font-size: 2.2rem;
     }
-}
-
-@media screen and (max-width: 1024px) {
-    .apresentacao {
-        height: 1140px;
+    .section-apresentacao__text--subtitle {
+        font-size: .95rem;
     }
-    .section-apresentacao__text {
+    .get-started__button,
+    .section-apresentacao__text--paragraph {
+        margin-left: 5%;
+    }
+    .get-started__button {
         margin-top: 3.4rem;
-        margin-right: 15%;
+        font-size: .97rem;
     }
-    .section-apresentacao__text--title {
-        font-size: 2.8rem;
+    .section-apresentacao__text--paragraph {
+        font-family: var(--font--text);
+        font-size: .70rem;
+        margin-top: 1.3rem;
     }
 }
 
@@ -493,25 +501,27 @@ a {
     opacity: .7;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     .sobrenos {
         height: 1130px;
     }
     .section-sobrenos__text--title {
-        font-size: 1.4rem;
+        font-size: 1.0rem;
+        margin-top: 2.6rem;
     }
     .section-sobrenos__text--subtitle {
-        font-size: 1.2rem;
+        font-size: .97rem;
     }
     .section-sobrenos__list {
         width: 360px;
+        border: 0;
     }
     .section-sobrenos__hr--end {
         width: 100%;
     }
     .section-sobrenos__text--paragraph {
         width: 350px;
-        font-size: 1.2rem;
+        font-size: 1.0rem;
     }
 }
 
@@ -615,7 +625,7 @@ a {
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     .nossoservico {
         height: 1150px;
     }
@@ -636,6 +646,15 @@ a {
     }
     .content-img__box {
         margin-top: .55rem;
+    }
+    .section-nossoservico__text {
+        margin-top: 2.6rem;
+    }
+    .section-nossoservico__text--title {
+        font-size: 1.5rem;
+    }
+    .section-nossoservico__text--subtitle {
+        font-size: 1.1rem;
     }
 }
 
@@ -689,6 +708,10 @@ a {
 
 .vantagens-content__img--right {
     margin-left: 4.2rem;
+}
+
+.section-vantagens__proud {
+    margin: auto;
 }
 
 .section-vantagens__proud--header {
@@ -757,7 +780,7 @@ a {
     font-size: 1.2rem;
     font-weight: 500;
     text-align: center;
-    margin-top: 4.8rem;
+    margin-top: 3.6rem;
 }
 
 .section-vantagens__button--click:hover {
@@ -771,16 +794,23 @@ a {
     text-align: center;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     .vantagens {
-        height: 2300px;
+        height: 2140px;
     }
     .section-vantagens__content {
         flex-direction: column;
         text-align: center;
     }
+    .vantagens-content__title {
+        font-size: 1.0rem;
+    }
+    .vantagens-content__subtitle {
+        font-size: .90rem;
+    }
     .content-text {
         text-align: center;
+        width: 300px;
     }
     .is-widescreen {
         display: none;
@@ -816,7 +846,7 @@ a {
 /**************/
 
 .produtos {
-    height: 1280px;
+    height: 1210px;
 }
 
 .section-produtos__content--title {
@@ -832,7 +862,7 @@ a {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 2.8rem;
+    margin-bottom: 2.4rem;
 }
 
 .section-produtos__content--brands {
@@ -862,12 +892,18 @@ a {
     line-height: .7cm;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     .produtos {
-        height: 2330px;
+        height: 2300px;
     }
     .section-produtos__content--flex {
         flex-direction: column;
+    }
+    .section-produtos__content--title {
+        font-size: 1.7rem;
+    }
+    .produtos__content--title {
+        margin: 3.4rem 0 1.6rem 0;
     }
 }
 
@@ -964,4 +1000,22 @@ a {
     font-family: var(--font--text);
     font-weight: 600;
     font-size: 1.0rem;
+}
+
+@media screen and (max-width: 600px) {
+    .is-white {
+        font-size: 1.0rem;
+    }
+    .is-red {
+        font-size: .75rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .is-white {
+        font-size: 1.0rem;
+    }
+    .is-red {
+        font-size: .75rem;
+    }
 }
