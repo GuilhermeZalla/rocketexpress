@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Policies &#8592; back to Rocket Express</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/category.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="navbar-home">
+                <a class="navbar-home__link" href="index.html" target="_self" rel="prev" hreflang="eng">&#8592; back to Rocket Express</a>
+            </div>
+            <ul class="navbar__list">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="help.html" target="_self">Home</a></li>
+                <li class=" navbar__item ">
+                    <a class="navbar__link" href="#modal">Contact</a>
+                    <div id="modal" class="navbar__modal">
+                        <div class="modal__div">
+                            <header class="modal__header">
+                                <h2 class="modal__title">Contact Us</h2>
+                                <a href="#close" title="Close" class="close">x</a>
+                            </header>
+                            <form action="" class="modal__form">
+                                <label for="">Name </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="text" placeholder="(optional)" class="form__input-name"><br>
+                                <label for="">Email </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="text" class="form__input-email"><br>
+                                <label for="">Subject </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="text" class="form__input-subject"><br>
+                                <label for="" class="message">Message </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <textarea name="" id="" cols="50" rows="10" class="form__input-textarea"></textarea><br>
+                                <label for="">Upload file</label> &nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="file" class="form__input-upload"><br>
+                                <button type="submit" class="form__button">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Header -->
+    <main class="main-content">
+        <aside class="side-nav">
+            <div class="side-nav__input">
+                <input type="search" id="search" placeholder="Search">
+            </div>
+            <div class="side-nav__menu">
+                <p class="side-nav__title">CATEGORIES</p>
+                <ul class="side-nav__list">
+                    <li class="side-nav__item--current"><a class="side-nav__link" href="5-buying-service.html">Buying Service </a></li>
+                    <li class="side-nav__item"><a class="side-nav__link" href="4-payment.html">Payment</a></li>
+                    <li class="side-nav__item"><a class="side-nav__link" href="3-shipping.html">Shipping</a></li>
+                    <li class="side-nav__item"><a class="side-nav__link--current" href="2-policies.html">Policies</a><i class="fa fa-angle-right arrow-icon"></i></li>
+                    <li class="side-nav__item"><a class="side-nav__link" href="1-contact.html">Contact</a></li>
+                    <li class="side-nav__item"><a class="side-nav__link" href="0-refunds-retuns-cancellations.html">Refunds, Returns and Cancellations</a></li>
+                </ul>
+            </div>
+        </aside>
+        <!-- Side Menu -->
+        <section class="content-database">
+            <div class="content-database__articles">
+                <div class="articles__title-box">
+                    <h1 class="articles__title">Policies</h1>
+                    <select class="articles__select" name="sort" id="sort"> 
+                        <option value="default">Sort by Default</option>
+                        <option value="alfabetic">Sort A-Z</option>
+                        <option value="popularity">Sort by Popularity</option>
+                        <option value="last-update">Sort by Last Updated</option>
+                    </select>
+                </div>
+                <ul class="articles__list">
+                    <li class="articles__item">
+                        <i class="fa fa-file-text-o is-grey"></i>&nbsp;&nbsp;<a class="articles__link" href="#">Prohibited Items</a>
+                    </li>
+                    <li class="articles__item">
+                        <i class="fa fa-file-text-o is-grey"></i>&nbsp;&nbsp;<a class="articles__link" href="#">Terms of Service</a>
+                    </li>
+                    <li class="articles__item">
+                        <i class="fa fa-file-text-o is-grey"></i>&nbsp;&nbsp;<a class="articles__link" href="#">Regarding fake and used items</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Content Database -->
+    </main>
+    <!-- Content Info -->
+    <footer class="main-footer">
+        <h5>&copy; <a href="index.html" target="_self" rel="prev" hreflang="eng">Rocket Express</a> <span id="date">2000</span></h5>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
