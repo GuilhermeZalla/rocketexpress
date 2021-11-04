@@ -17,6 +17,8 @@
 /* 4. Locate Info
 /* 5. Most Popular Articles
 /* 6. Footer
+/* 7. Media Queries
+
 
 /**************/
 
@@ -132,6 +134,20 @@ h1 {
 
 .navbar__list {
     display: inline-block;
+}
+
+.is-mobile-only {
+    display: none;
+}
+
+.is-mobile-only>i {
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: rgba(128, 128, 128, 0.781);
+}
+
+.is-mobile-only>i:hover {
+    color: var(--clr--medium-white);
 }
 
 .navbar__item {
@@ -272,7 +288,6 @@ input {
     box-shadow: 0px 0px 2px 1px #dedede96;
     border-radius: 5px;
     outline: none;
-    width: 200px;
     font-family: var(--font--text);
     font-size: 1.0rem;
 }
@@ -299,6 +314,10 @@ input:focus {
     font-size: 18px;
     color: var(--clr--medium-white);
     cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: rgb(53, 128, 194);
 }
 
 
@@ -397,6 +416,47 @@ input:focus {
 
 .main-footer a:hover {
     color: black;
+}
+
+
+/**************/
+
+
+/* 7. Media Queries
+/**************/
+
+@media screen and (max-width: 800px) {
+    .navbar__list {
+        display: none;
+    }
+    .is-mobile-only {
+        display: inline-block;
+    }
+    .is-large {
+        width: 410px;
+    }
+    .search-btn {
+        margin: 80px 0 3px 320px;
+    }
+    .articles {
+        height: 1280px;
+    }
+    .articles__title {
+        font-size: 3.8rem;
+    }
+    .articles__list {
+        columns: 1;
+        margin-left: 1.6rem;
+    }
+    .articles-database__links {
+        grid-template-columns: repeat(1, 2fr);
+        grid-template-rows: repeat(1, 2fr);
+        gap: 0;
+    }
+    .main-footer>h5 {
+        margin-top: 7rem;
+        margin-bottom: 2rem;
+    }
 }
 
 
