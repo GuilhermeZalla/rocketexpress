@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .helper__link-main {
     background-color: var(--clr--purple);
     border-radius: 50px;
@@ -17,7 +18,7 @@
     padding: 17px;
 }
 
-.helper__link-main>i#close {
+.helper__link-main>i#close-helper {
     display: none;
     font-size: 1.6rem;
     padding: 17px 20px;
@@ -28,12 +29,12 @@
     border: 1px solid var(--clr--border);
     border-radius: 5px;
     box-shadow: 0px 0px 5px 1px #8080804f;
-    height: 75vh;
-    width: 20vw;
+    height: 65vh;
+    width: 18vw;
     position: fixed;
     z-index: 11;
     right: 2%;
-    top: 13vh;
+    top: 23vh;
     overflow: scroll;
     overflow-x: hidden;
     display: none;
@@ -113,6 +114,16 @@
     padding: 15px;
     border: none;
     outline: none;
+    position: relative;
+}
+
+.helper__footer i {
+    position: absolute;
+    right: 5%;
+    left: auto;
+    top: 16px;
+    color: rgba(128, 128, 128, 0.377);
+    font-size: 1.2rem;
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1919px) {
@@ -121,18 +132,27 @@
     }
     .helper-chat__div {
         top: 8vh;
-        width: 25vw;
+        width: 20vw;
+        height: 80vh;
+    }
+    .helper__body .helper-box__div {
+        height: 200px;
+        padding: 20px;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .helper-chat__div {
-        top: 12vh;
+        top: 20vh;
         width: 30vw;
     }
 }
 
 @media screen and (max-width: 800px) {
+    .helper__link-main {
+        top: 88.5%;
+        right: 5%;
+    }
     .helper__link {
         top: 88.7%;
     }

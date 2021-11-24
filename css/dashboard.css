@@ -14,9 +14,10 @@
 /* 1. Gerais
 /* 2. Container
 /* 3. Header
-/* 4. Section Overview
-/* 5. Section Shop Info
-/* 6. Footer
+/* 4 Modal
+/* 5. Section Overview
+/* 6. Section Shop Info
+/* 7. Footer
 
 
 /**************/
@@ -193,7 +194,192 @@ main {
 /**************/
 
 
-/* 4. Section Overview 
+/* 4 Modal
+/**************/
+
+.main-modal__container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    display: none;
+}
+
+.main-modal__container:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.main-modal__container>.main-modal__content {
+    width: 320px;
+    position: relative;
+    margin: 5% auto;
+    border-radius: 7px;
+    background-color: var(--clr--medium-red);
+    color: var(--clr--white);
+    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.589);
+}
+
+.main-modal__content>.main-modal__header {
+    background-color: var(--clr--medium-red);
+    height: 110px;
+    text-align: center;
+    padding: 8px;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+.main-modal__header>a {
+    position: absolute;
+    right: 7px;
+}
+
+.main-modal__header>h2 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.main-modal__header i {
+    color: var(--clr--white);
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: left;
+}
+
+.main-modal__body {
+    padding: 20px;
+    background-color: var(--clr--white);
+}
+
+.main-modal__content>.main-modal__body>.main-modal__link,
+.main-modal__login-form input {
+    border-radius: 3px;
+    width: 100%;
+    font-size: .80rem;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.main-modal__body>.main-modal__link {
+    color: var(--clr--white);
+    display: block;
+    background-color: rgb(66, 133, 244);
+    font-weight: 600;
+}
+
+.main-modal__link>i {
+    padding: 10px 20px 10px 18px;
+    margin-right: 12px;
+    font-size: 1.2rem;
+    color: var(--clr--white);
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.main-modal__link>.fa-google {
+    padding-right: 15px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.main-modal__link:hover {
+    background-color: rgba(27, 77, 158, 0.904);
+}
+
+.main-modal__body>a:first-child {
+    background-color: rgb(41, 62, 106);
+}
+
+.main-modal__body>a:first-child:hover {
+    background-color: rgb(17, 53, 133);
+}
+
+.main-modal__body>.main-modal__span {
+    color: var(--clr--black);
+    text-align: center;
+    display: block;
+    margin: 20px 0;
+    font-size: .80rem;
+}
+
+.main-modal__login-form input {
+    margin-bottom: 10px;
+    border: 1px solid rgba(104, 102, 102, 0.096);
+    padding: 13px 5px 13px 55px;
+}
+
+.main-modal__login-form input:focus {
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    transition: 1s;
+}
+
+.main-modal__login-form a {
+    color: var(--clr--black);
+    display: block;
+    font-size: .80rem;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.main-modal__login-form .fa-lock,
+.main-modal__login-form .fa-id-card {
+    color: var(--clr--icon);
+    position: absolute;
+    left: auto;
+    bottom: auto;
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+}
+
+.main-modal__login-form .fa-id-card {
+    top: 284px;
+    right: 260px;
+    font-size: 1.2rem;
+}
+
+.main-modal__login-form .fa-lock {
+    top: 335px;
+    right: 265px;
+    font-size: 1.4rem;
+}
+
+.main-modal__login-form .fname,
+.main-modal__login-form .lname {
+    display: none;
+    padding-left: 15px;
+}
+
+.main-modal__content>.main-modal__footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(234, 83, 35);
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    text-align: center;
+    padding: 25px;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.main-modal__text-login:hover {
+    zoom: 95%;
+}
+
+
+/**************/
+
+
+/* 5. Section Overview 
 /**************/
 
 .section-overview>.section-overview__header {
@@ -230,7 +416,7 @@ main {
 /**************/
 
 
-/* 5. Section Shop Info
+/* 6. Section Shop Info
 /**************/
 
 .shop-info__search {
@@ -564,7 +750,7 @@ main {
 /**************/
 
 
-/* 6. Dashboard Footer
+/* 7. Dashboard Footer
 
 /**************/
 

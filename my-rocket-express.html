@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/helper.css">
 </head>
 
-<body>
+<body id="body">
     <header class="main-header">
         <nav class="main-header__navbar">
             <a class="navbar__home-link" href="index.html" target="_self" rel="prev" hreflang="en">
@@ -24,9 +24,9 @@
             <ul class="navbar__list is-widescreen-only">
                 <li class="navbar__item"><a href="#"><i class="fa fa-plus"></i> Add an item</a></li>
                 <li class="navbar__item"><a href="#"><i class="fa fa-shopping-cart"></i><span id="item-count">0</span></a></li>
-                <li class="navbar__item"><a href="#"><i class="fa fa-question-circle"></i></a></li>
-                <li class="navbar__item"><a class="is-black" href="#">Log in</a></li>
-                <li class="navbar__item"><a href="#">Sign up</a></li>
+                <li class="navbar__item"><a href="#" onclick="showChat()"><i class="fa fa-question-circle"></i></a></li>
+                <li class="navbar__item"><a class="is-black" href="#open-modal" onclick="openLoginModal()">Log in</a></li>
+                <li class="navbar__item"><a id="signup" href="#open-modal" onclick="openSignUpModal()">Sign up</a></li>
             </ul>
             <a class="navbar__user-profile-icon is-mobile-only" href="#">
                 <i class="fa fa-user"></i>
@@ -35,6 +35,31 @@
     </header>
     <!-- Header -->
     <main class="dashboard-main">
+        <div id="open-modal" class="main-modal__container">
+            <div id="modal-content" class="main-modal__content">
+                <header class="main-modal__header">
+                    <img class="navbar__img" src="assets/logo.svg " alt="Rocket Express logo " width="200">
+                    <a href="#"><i class="fa fa-close" onclick="closeModal()"></i></a>
+                    <h2 id="modal-title" class="main-modal__title"></h2>
+                </header>
+                <div class="main-modal__body">
+                    <a class="main-modal__link" href="#"><i class="fa fa-facebook"></i> LOG IN WITH FACEBOOK</a>
+                    <a class="main-modal__link" href="#"> <i class="fa fa-google"></i> LOG IN WITH GOOGLE</a>
+                    <span class="main-modal__span">or</span>
+                    <div class="main-modal__login-form">
+                        <input type="email" id="email" name="your-email" placeholder="yours@example.com"><i class="fa fa-id-card"></i></input>
+                        <input type="password" id="password" name="your-password" placeholder="your password"><i class="fa fa-lock"></i></input>
+                        <a id="no-password" href="">Don't remember your password?</a>
+                        <input class="fname" type="text" id="first-name" name="fname" placeholder="your real first name">
+                        <input class="lname" type="text" id="last-name" name="lname" placeholder="your real last name">
+                    </div>
+                </div>
+                <footer class="main-modal__footer">
+                    <a class="main-modal__text-login" href="#">LOG IN ></i></a>
+                </footer>
+            </div>
+        </div>
+        <!-- Login and Sign Up modal-->
         <section class="section-overview">
             <div class="section-overview__header">
                 <h1 class="section-overview__title">The quick, easy way to buy from China.</h1>
@@ -113,11 +138,11 @@
         </section>
         <!-- Section Shop Info -->
         <div class="helper__container">
-            <a class="helper__link-main" href="#chat" onclick="showChat()">
-                <i id="open" class="fa fa-comment"></i>
-                <i id="close" class="fa fa-times"></i>
+            <a class="helper__link-main" href="#" onclick="showChat()">
+                <i id="open-helper" class="fa fa-comment"></i>
+                <i id="close-helper" class="fa fa-times"></i>
             </a>
-            <div id="chat" class="helper-chat__div">
+            <div id="helper" class="helper-chat__div">
                 <header class="helper__header">
                     <h2 class="header__title">Instant Answers</h2>
                 </header>
@@ -154,7 +179,7 @@
                     </a>
                 </div>
                 <footer class="helper__footer">
-                    <input type="text" id="helper" name="helper-search" placeholder="What can we help you with?">
+                    <input type="text" id="helper" name="helper-search" placeholder="What can we help you with?"><i class="fa fa-search"></i></input>
                 </footer>
             </div>
         </div>
