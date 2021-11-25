@@ -1,6 +1,6 @@
 # Rocket Express
  Site internacional de ecommerce com foco no mercado chinês
-## Introdução
+## Sobre
 * Esse projeto foi desenvolvido para praticar os meus conhecimentos em CSS e HTML, e desenvolver as minhas habilidades como desenvolver web.
 * Quais as tecnologias que foram utilizadas? (HTML, CSS, Flexbox, Javascript)
 * O projeto foi desenvolvido utilizando a nomenclatura para CSS Block Element Modifier (BEM).
