@@ -14,9 +14,10 @@
 /* 1. Gerais
 /* 2. Container
 /* 3. Header
-/* 4 Modal
+/* 4. Modal
 /* 5. Section Overview
 /* 6. Section Shop Info
+/* 7. Helper chat 
 /* 7. Footer
 
 
@@ -750,7 +751,176 @@ main {
 /**************/
 
 
-/* 7. Dashboard Footer
+/* 7. Helper Chat
+/**************/
+
+.helper__link-main {
+    background-color: var(--clr--purple);
+    border-radius: 50px;
+    position: fixed;
+    right: 2%;
+    top: 89.7%;
+    z-index: 10;
+}
+
+.helper__link-main:hover {
+    background-color: rgb(126, 75, 146);
+}
+
+.helper__link-main>i {
+    font-size: 1.6rem;
+    color: white;
+    padding: 17px;
+}
+
+.helper__link-main>i#close-helper {
+    display: none;
+    font-size: 1.6rem;
+    padding: 17px 20px;
+}
+
+.helper-chat__div {
+    background-color: #F9FAFA;
+    border: 1px solid var(--clr--border);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 1px #8080804f;
+    height: 65vh;
+    width: 18vw;
+    position: fixed;
+    z-index: 11;
+    right: 2%;
+    top: 23vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    display: none;
+}
+
+.helper-chat__div::-webkit-scrollbar {
+    width: 8px;
+}
+
+.helper-chat__div::-webkit-scrollbar-track {
+    background: #EFF0F0;
+}
+
+.helper-chat__div::-webkit-scrollbar-thumb {
+    background-color: rgb(215, 216, 216);
+    border-radius: 20px;
+    border: 1px solid transparent;
+}
+
+.helper-chat__div .helper__header {
+    background-color: var(--clr--purple);
+    border-top-left-radius: inherit;
+    height: 50px;
+    text-align: center;
+    padding: 20px;
+    color: var(--clr--white);
+    font-size: .78rem;
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.helper-chat__div .helper__body {
+    padding: 10px 8px 8px 8px;
+}
+
+.helper__body .helper-box__div {
+    background-color: var(--clr--white);
+    border: 1px solid rgba(128, 128, 128, 0.356);
+    border-radius: 5px;
+    height: 180px;
+    font-size: .78rem;
+    font-weight: 600;
+    padding: 20px;
+    margin-bottom: 1px;
+}
+
+.helper__body .helper-box__div:hover {
+    margin-top: -5px;
+    margin-bottom: 6px;
+    box-shadow: 0px 0px 6px 2px #00000027;
+    transition-duration: 300ms;
+}
+
+.helper__body .helper__title {
+    color: var(--clr--link);
+    margin-bottom: .90rem;
+}
+
+.helper__body .helper__text {
+    color: var(--clr--icon);
+    line-height: .5cm;
+}
+
+.helper__footer {
+    width: 100%;
+    position: sticky;
+    bottom: 0;
+    border-top: 1px solid var(--clr--border);
+    box-shadow: 0px -1px 4px 1px #0000001a;
+}
+
+.helper__footer>input {
+    width: inherit;
+    height: 50px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    position: relative;
+}
+
+.helper__footer i {
+    position: absolute;
+    right: 5%;
+    left: auto;
+    top: 16px;
+    color: rgba(128, 128, 128, 0.377);
+    font-size: 1.2rem;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1919px) {
+    .helper__link {
+        top: 85%;
+    }
+    .helper-chat__div {
+        top: 8vh;
+        width: 20vw;
+        height: 80vh;
+    }
+    .helper__body .helper-box__div {
+        height: 200px;
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .helper-chat__div {
+        top: 20vh;
+        width: 30vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .helper__link-main {
+        top: 88.5%;
+        right: 5%;
+    }
+    .helper__link {
+        top: 88.7%;
+    }
+    .helper-chat__div {
+        width: 65vw;
+    }
+}
+
+
+/**************/
+
+
+/* 8. Dashboard Footer
 
 /**************/
 
