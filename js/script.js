@@ -21,7 +21,22 @@ function showChat() {
     }
 }
 
-// Opens the Login modal 
+// Opens the dropdown menu content in the index page
+function showMenu() {
+    let element = document.getElementById("hidmenu");
+    if (element.style.display === 'none') {
+        element.style.display = 'block';
+        document.getElementById("menu-bar").style.display = 'none';
+        document.getElementById("close-menu").style.display = 'inline-block';
+        document.getElementById("close-menu").style.paddingLeft = '12px';
+    } else {
+        element.style.display = 'none';
+        document.getElementById("menu-bar").style.display = 'block';
+        document.getElementById("close-menu").style.display = 'none';
+    }
+}
+
+// Opens the Login modal in the my-rocket-express page 
 
 function openLoginModal() {
     let element = document.getElementById("open-modal");
@@ -33,7 +48,7 @@ function openLoginModal() {
     }
 }
 
-// Opens the Sign Up modal 
+// Opens the Sign Up modal in the my-rocket-express page 
 
 function openSignUpModal() {
     let element = document.getElementById("open-modal");
