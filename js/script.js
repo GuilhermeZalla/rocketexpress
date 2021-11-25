@@ -1,11 +1,12 @@
 // Changes the page's year
-
 let element = document.getElementById("date");
 let newYear = new Date();
 element.innerText = newYear.getFullYear();
 
-// Shows the chat function for the index and my-rocket-express
+/**********************************************************************************************/
 
+
+// Shows the chat function for the index and my-rocket-express
 function showChat() {
     let element = document.getElementById("helper");
     let open = document.getElementById("open-helper");
@@ -21,7 +22,11 @@ function showChat() {
     }
 }
 
-// Opens the dropdown menu content in the index page
+/**********************************************************************************************/
+
+
+// Opens the dropdown menu content in the index page and the function 'showInput' 
+// displays in a block value the input element after the icon 
 function showMenu() {
     let element = document.getElementById("hidmenu");
     if (element.style.display === 'none') {
@@ -47,8 +52,10 @@ function showInput() {
     }
 }
 
-// Opens the Login modal in the my-rocket-express page 
+/**********************************************************************************************/
 
+
+// Opens the Login modal in the my-rocket-express page 
 function openLoginModal() {
     let element = document.getElementById("open-modal");
     if (element.style.display === 'none') {
@@ -59,8 +66,11 @@ function openLoginModal() {
     }
 }
 
-// Opens the Sign Up modal in the my-rocket-express page 
+/**********************************************************************************************/
 
+
+// Opens the Sign Up modal in the my-rocket-express page and uses the 'closeModal' 
+// function to define default values for the elements
 function openSignUpModal() {
     let element = document.getElementById("open-modal");
     if (element.style.display === 'none') {

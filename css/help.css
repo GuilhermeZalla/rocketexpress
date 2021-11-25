@@ -247,7 +247,7 @@ h1 {
 
 .is-active {
     border-bottom: 3px solid var(--clr--medium-white);
-    padding-bottom: 17px;
+    padding-bottom: 18px;
 }
 
 .form__button {
@@ -290,6 +290,7 @@ input {
     outline: none;
     font-family: var(--font--text);
     font-size: 1.0rem;
+    cursor: text;
 }
 
 input:focus {
@@ -452,6 +453,21 @@ input:focus {
         grid-template-columns: repeat(1, 2fr);
         grid-template-rows: repeat(1, 2fr);
         gap: 0;
+    }
+    .main-footer>h5 {
+        margin-top: 7rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .articles {
+        height: 740px;
+    }
+    .articles-database__links {
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: repeat(2, 2fr);
+        gap: 5px;
     }
     .main-footer>h5 {
         margin-top: 7rem;
