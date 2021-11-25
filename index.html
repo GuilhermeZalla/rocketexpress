@@ -52,7 +52,7 @@
             <ul class="hidden-menu__list">
                 <li class="hidden-menu__item"><a class="hidden-menu__link" href="help.html" target="_blank" rel="next" hreflang="eng">HELP</a></li>
                 <li class="hidden-menu__item"><a class="hidden-menu__link" href="">SIGN IN</a></li>
-                <li class="hidden-menu__item"><a href="#" class="hidden-menu__link">ENGLISH</a></li>
+                <li class="hidden-menu__item"><a href="#" class="hidden-menu__link">ENGLISH</a> <i class="fa fa-angle-down"></i></li>
             </ul>
             <ul class="hidden-menu__dropdown-content">
                 <li class="hidden-menu__dropdown-content-item"> <a href="#" class="hidden-menu__dropdown-content--is-link">ENGLISH</a></li>
@@ -61,7 +61,10 @@
                 <li class="hidden-menu__dropdown-content-item"> <a href="#" class="hidden-menu__dropdown-content--is-link">FRANÇAIS</a></li>
                 <li class="hidden-menu__dropdown-content-item"> <a href="#" class="hidden-menu__dropdown-content--is-link">ESPAÑOL</a></li>
             </ul>
-            <input class="input-search" type="text" name="search">
+            <div class="hidden-menu__input">
+                <i id="input-icon" class="fa fa-search" onclick="showInput()"></i>
+                <input id="hinput" class="input-search" type="text" name="search">
+            </div>
         </div>
     </header>
     <!--Header-->

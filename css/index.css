@@ -37,6 +37,7 @@
     --clr--hover-transition: rgb(245, 172, 39);
     --clr--hover-transition-burguer: rgba(231, 154, 10, 0.418);
     --clr--hover-link-item: rgba(231, 154, 10, 0.61);
+    --clr--link: rgb(52, 152, 219);
     --clr--blue-dark: rgb(40, 45, 60);
     --font--text: 'Open Sans', sans-serif;
     --font--title: 'Inter', sans-serif;
@@ -349,6 +350,13 @@ button {
     padding: 10px;
 }
 
+.hidden-menu__item:last-child i {
+    color: var(--clr--link);
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin-left: 20%;
+}
+
 .hidden-menu__list>.hidden-menu__item:hover,
 .hidden-menu__dropdown-content .hidden-menu__dropdown-content-item:hover {
     background-color: rgba(221, 215, 215, 0.192);
@@ -367,10 +375,26 @@ button {
     color: purple;
 }
 
-.hidden-menu>input {
-    margin: 5% 2%;
+.hidden-menu__input {
+    position: relative;
+}
+
+.hidden-menu__input>i {
+    color: rgba(128, 128, 128, 0.719);
+    position: absolute;
+    right: 40px;
+    left: auto;
+    top: 34px;
+    bottom: auto;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.hidden-menu__input>input {
+    float: right;
+    margin: 5% 3% 0 0;
     border: 1px solid rgba(0, 0, 0, 0.377);
-    border-radius: 2px;
+    display: none;
 }
 
 @media screen and (max-width: 600px) {

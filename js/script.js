@@ -36,6 +36,17 @@ function showMenu() {
     }
 }
 
+function showInput() {
+    let icon = document.getElementById("hinput");
+    if (icon.style.display === 'none') {
+        icon.style.display = 'block';
+        document.getElementById("input-icon").style.right = '165px';
+    } else {
+        icon.style.display = 'none';
+        document.getElementById("input-icon").style.right = '40px';
+    }
+}
+
 // Opens the Login modal in the my-rocket-express page 
 
 function openLoginModal() {
