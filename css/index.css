@@ -1000,12 +1000,12 @@ button {
     line-height: .7cm;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .produtos {
-        height: 2300px;
+        height: 1500px;
     }
     .section-produtos__content--flex {
-        flex-direction: column;
+        flex-direction: unset;
     }
     .section-produtos__content--title {
         font-size: 1.7rem;
