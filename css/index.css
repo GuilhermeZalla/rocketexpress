@@ -627,6 +627,12 @@ button {
     opacity: .7;
 }
 
+@media screen and (max-width: 600px) {
+    .sobrenos {
+        height: 900px;
+    }
+}
+
 @media screen and (min-width: 601px) and (max-width: 900px) {
     .sobrenos {
         height: 700px;
