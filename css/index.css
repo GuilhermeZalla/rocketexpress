@@ -130,15 +130,13 @@ button {
 
 @media screen and (min-width: 601px) and (max-width: 900px) {
     .container-section__nossoservico {
-        flex-direction: row;
+        display: unset;
     }
 }
 
 /**************/
 
-
 /*3. Header*/
-
 
 /**************/
 
@@ -629,10 +627,7 @@ button {
     opacity: .7;
 }
 
-@media screen and (max-width: 800px) {
-    .sobrenos {
-        height: 1130px;
-    }
+@media screen and (min-width: 601px) and (max-width: 900px) {
     .section-sobrenos__text--title {
         font-size: 1.0rem;
         margin-top: 2.6rem;
@@ -653,10 +648,7 @@ button {
     }
 }
 
-@media screen and (max-width: 1024px) {
-    .sobrenos {
-        height: 1130px;
-    }
+@media screen and (min-width: 901px) and (max-width: 1200px) {
     .section-sobrenos__text--title {
         font-size: 1.4rem;
     }
@@ -675,12 +667,9 @@ button {
     }
 }
 
-
 /**************/
 
-
 /* 6. Nosso Serviço*/
-
 
 /**************/
 
