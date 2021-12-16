@@ -628,35 +628,20 @@ button {
 }
 
 @media screen and (min-width: 601px) and (max-width: 900px) {
-    .section-sobrenos__text--title {
-        font-size: 1.0rem;
-        margin-top: 2.6rem;
+    .sobrenos {
+        height: 700px;
     }
-    .section-sobrenos__text--subtitle {
-        font-size: .97rem;
-    }
-    .section-sobrenos__list {
-        width: 360px;
-        border: 0;
-    }
-    .section-sobrenos__hr--end {
-        width: 100%;
-    }
-    .section-sobrenos__text--paragraph {
-        width: 350px;
-        font-size: 1.0rem;
-    }
-}
-
-@media screen and (min-width: 901px) and (max-width: 1200px) {
     .section-sobrenos__text--title {
         font-size: 1.4rem;
+        margin-top: 2.6rem;
+        margin-right: 10rem;
     }
     .section-sobrenos__text--subtitle {
         font-size: 1.2rem;
     }
     .section-sobrenos__list {
         width: 360px;
+        border: 0;
     }
     .section-sobrenos__hr--end {
         width: 100%;
