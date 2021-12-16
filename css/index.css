@@ -1000,6 +1000,12 @@ button {
     line-height: .7cm;
 }
 
+@media screen and (max-width: 600px) {
+    .produtos {
+        height: 2000px;
+    }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .produtos {
         height: 1500px;
