@@ -128,13 +128,6 @@ button {
     }
 }
 
-@media screen and (max-width: 1024px) {
-    .container-section__sobrenos {
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-}
-
 /**************/
 
 
