@@ -647,7 +647,7 @@ button {
 
 @media screen and (max-width: 1024px) {
     .sobrenos {
-        height: 1130px;
+        height: 2130px;
     }
     .section-sobrenos__text--title {
         font-size: 1.4rem;
