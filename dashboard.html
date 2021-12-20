@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket Express - Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/my-rocket-express.css">
+    <link rel="stylesheet" href="css/helper.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body id="body" onload="openLoginModal()">
+    <header class="main-header">
+        <nav class="main-header__navbar">
+            <a class="navbar__home-link" href="index.html" target="_self" rel="prev" hreflang="en">
+                <img class="navbar__img" src="assets/logo.svg" alt="Rocket Express logo" width="162">
+            </a>
+            <ul class="navbar__list is-widescreen-only">
+                <li class="navbar__item"><a href="#"><i class="fa fa-plus "></i> Add an item</a></li>
+                <li class="navbar__item"><a href="#"><i class="fa fa-shopping-cart "></i><span id="item-count">0</span></a></li>
+                <li class="navbar__item"><a href="#" onclick="showChat()"><i class="fa fa-question-circle"></i></a></li>
+                <li class="navbar__item"><a class="is-black " href="#open-modal" onclick="openLoginModal()">Log in</a></li>
+                <li class="navbar__item"><a id="signup " href="#open-modal" onclick="openSignUpModal()">Sign up</a></li>
+            </ul>
+            <a class="navbar__user-profile-icon is-mobile-only " href="# ">
+                <i class="fa fa-user "></i>
+            </a>
+        </nav>
+    </header>
+    <!-- Header -->
+    <main class="dashboard-main">
+        <div class="dashboard-main__div">
+            <i class="fa fa-globe"></i>
+            <h2 class="dashboard-main__div-title ">DISCOVER</h2>
+        </div>
+        <div id="open-modal" class="main-modal__container">
+            <div id="modal-content " class="main-modal__content">
+                <header class="main-modal__header">
+                    <img class="navbar__img" src="assets/logo.svg" alt="Rocket Express logo" width="200">
+                    <a href="# "><i class="fa fa-close" onclick="closeModal()"></i></a>
+                    <h2 id="modal-title" class="main-modal__title "></h2>
+                </header>
+                <div class="main-modal__body">
+                    <a class="main-modal__link" href="#"><i class="fa fa-facebook"></i> LOG IN WITH FACEBOOK</a>
+                    <a class="main-modal__link" href="#"> <i class="fa fa-google"></i> LOG IN WITH GOOGLE</a>
+                    <span class="main-modal__span ">or</span>
+                    <div class="main-modal__login-form">
+                        <input type="email" id="email" name="your-email" placeholder="yours@example.com"><i class="fa fa-id-card"></i></input>
+                        <input type="password" id="password" name="your-password" placeholder="your password "><i class="fa fa-lock"></i></input>
+                        <a id="no-password" href=" ">Don't remember your password?</a>
+                        <input class="fname" type="text" id="first-name" name="fname" placeholder="your real first name">
+                        <input class="lname" type="text" id="last-name" name="lname" placeholder="your real last name">
+                    </div>
+                </div>
+                <footer class="main-modal__footer">
+                    <a class="main-modal__text-login" href="#">LOG IN ></i></a>
+                </footer>
+            </div>
+        </div>
+        <!-- Login and Sign Up modal -->
+        <section class="user-dashboard ">
+            <div class="user-dashboard__container ">
+                <div class="user-dashboard__register-container ">
+                    <a href="# " class="user-dashboard__register-link ">
+                        <div class="user-dashboard__register ">
+                            <h2 class="user-dashboard__register-title ">YOUR CART</h2>
+                            <span class="user-dashboard__register-current-value is-yellow ">0</span>
+                            <h3 class="user-dashboard__register-caption ">Your cart is empty.</h3>
+                            <i class="fa fa-shopping-cart "></i>
+                        </div>
+                    </a>
+                    <a href="# " class="user-dashboard__register-link ">
+                        <div class="user-dashboard__register ">
+                            <h2 class="user-dashboard__register-title ">ORDER ALERTS</h2>
+                            <span class="user-dashboard__register-current-value is-red ">0</span>
+                            <h3 class="user-dashboard__register-caption ">No orders need your attention.</h3>
+                            <i class="fa fa-exclamation-triangle "></i>
+                        </div>
+                    </a>
+                    <a href="# " class="user-dashboard__register-link ">
+                        <div class="user-dashboard__register ">
+                            <h2 class="user-dashboard__register-title ">MAILBOX</h2>
+                            <span class="user-dashboard__register-current-value is-blue ">0</span>
+                            <h3 class="user-dashboard__register-caption ">Your mailbox is empty.</h3>
+                            <i class="fa fa-envelope "></i>
+                        </div>
+                    </a>
+                    <a href="# " class="user-dashboard__register-link ">
+                        <div class="user-dashboard__register ">
+                            <h2 class="user-dashboard__register-title ">CONSOLIDATION</h2>
+                            <span class="user-dashboard__register-current-value is-link ">0</span>
+                            <h3 class="user-dashboard__register-caption ">No consolidation are pendings.</h3>
+                        </div>
+                    </a>
+                </div>
+                <aside class="user-dashboard__help">
+                    <header class="user-dashboard__help-header">
+                        <i class="fa fa-exclamation-circle"></i>
+                        <h1 class="user-dashboard__help-title">Help is here!</h1>
+                    </header>
+                    <div class="user-dashboard__help-body ">
+                        <p class="user-dashboard__help-body-caption ">Rocket Express is a Beijing-based buying service for products from China.</p>
+                        <ul class="user-dashboard__help-body-list ">
+                            <li class="user-dashboard__help-body-item ">
+                                <i class="fa fa-shopping-cart "></i>
+                                <div class="user-dashboard__help-body-item-text ">
+                                    <h2>Tell us what to buy.</h2>
+                                    <p>Add the items you’d like us to buy to your cart. See your quote instantly.</p>
+                                </div>
+                            </li>
+                            <li class="user-dashboard__help-body-item ">
+                                <i class="fa fa-credit-card "></i>
+                                <div class="user-dashboard__help-body-item-text ">
+                                    <h2>Checkout.</h2>
+                                    <p>Sign-in to checkout. It’s so simple.</p>
+                                </div>
+                            </li>
+                            <li class="user-dashboard__help-body-item ">
+                                <i class="fa fa-gift "></i>
+                                <div class="user-dashboard__help-body-item-text ">
+                                    <h2>We buy your items.</h2>
+                                    <p>Our buyers will purchase the items for you.</p>
+                                </div>
+                            </li>
+                            <li class="user-dashboard__help-body-item ">
+                                <i class="fa fa-truck "></i>
+                                <div class="user-dashboard__help-body-item-text ">
+                                    <h2>Ship your items.</h2>
+                                    <p>We’ll send you an email when your items arrive. Sign-in to select and ship your packages.</p>
+                                </div>
+                            </li>
+                            <li class="user-dashboard__help-body-item ">
+                                <i class="fa fa-calculator "></i>
+                                <div class="user-dashboard__help-body-item-text ">
+                                    <h2>Shipping Rates. <span>NEW</span></h2>
+                                    <p>Estimate your shipping costs.</p>
+                                    <button><i class="fa fa-plus-square "></i>&nbsp;&nbsp;Get Rates</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <footer class="user-dashboard__help-footer ">
+                        <button> <i class="fa fa-plus "></i> Get Support</button>
+                    </footer>
+                </aside>
+            </div>
+        </section>
+        <div class="helper__container">
+            <a class="helper__link-main" href="#" onclick="showChat()">
+                <i id="open-helper" class="fa fa-comment"></i>
+                <i id="close-helper" class="fa fa-times"></i>
+            </a>
+            <div id="helper " class="helper-chat__div ">
+                <header class="helper__header ">
+                    <h2 class="header__title ">Instant Answers</h2>
+                </header>
+                <div class="helper__body ">
+                    <a class="helper-body__link " href="# ">
+                        <div class="helper-box__div ">
+                            <h2 class="helper__title ">How do I use Buying Service? How does it work?</h2>
+                            <p class="helper__text ">Rocket Express is the quick, easy way to buy from China. Shop any store we'll buy and ship the items to you. Let' say you find an item you want to order from Amazon China, but they won't</p>
+                        </div>
+                    </a>
+                    <a class="helper-body__link " href=" ">
+                        <div class="helper-box__div ">
+                            <h2 class="helper__title ">How much does shipping cost ?</h2>
+                            <p class="helper__text ">Unlike regular online stores, the shipping costs for your prodcuts are billed separately because we need to have the physical items to tell you how much international shipping will cost. How it Works</p>
+                        </div>
+                    </a>
+                    <a class="helper__link " href=" ">
+                        <div class="helper-box__div ">
+                            <h2 class="helper__title ">Can you buy from Suning.com/Auction sites ?</h2>
+                            <p class="helper__text ">Yes, we can help with purchasing from Auction sites. We accept orders for both Buy-it-now and Bidding auctions (see below for the difference in auction type). As our bidding system is not automated</p>
+                        </div>
+                    </a>
+                    <a class="helper__link " href=" ">
+                        <div class="helper-box__div ">
+                            <h2 class="helper__title ">Do you handle preorder items?</h2>
+                            <p class="helper__text ">Yes, we accept requests for pre-order items! We handle orders even if the item is only released several months later. When do I need to pay for a pre-order ? We require upfront payment for all</p>
+                        </div>
+                    </a>
+                    <a class="helper__link " href=" ">
+                        <div class="helper-box__div ">
+                            <h2 class="helper__title ">How long can I keep an item in my mailbox?</h2>
+                            <p class="helper__text ">Storage Period You are notified by email when your items arrive at our warehouse. While we encourage you to ship your items within 60 days, you are allowed to store your items at our warehouse for up</p>
+                        </div>
+                    </a>
+                </div>
+                <footer class="helper__footer ">
+                    <input type="text " id="helper " name="helper-search " placeholder="What can we help you with? "><i class="fa fa-search "></i></input>
+                </footer>
+            </div>
+        </div>
+        <!-- Helper Chat -->
+    </main>
+    <!-- Dashboard Main -->
+    <footer class="dashboard-footer">
+        <div class="footer__container">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="" class="footer__link">About</a>
+                </li>
+                <li class="footer__item">
+                    <a href="" class="footer__link">Contact</a>
+                </li>
+                <li class="footer__item">
+                    <a href="" class="footer__link">Jobs</a>
+                </li>
+                <li class="footer__item">
+                    <a href="" class="footer__link">What's New</a>
+                </li>
+                <li class="footer__item">
+                    <a href="" class="footer__link">Privacy Policy</a>
+                </li>
+                <li class="footer__item">
+                    <a href="" class="footer__link">Terms of Service</a>
+                </li>
+                <li class="footer__item">
+                    <span class="footer__link">USD=111.87 元/¥</span>
+                </li>
+            </ul>
+            <select name="language" id="language">
+                <option value="english">English</option>
+                <option value="français">Français</option>
+                <option value="chinese">Chinese</option>
+                <option value="spanish">Español</option>
+                <option value="portuguese">Português</option>
+            </select>
+        </div>
+    </footer>
+    <!-- Dashboard Footer -->
+    <script src="js/script.js "></script>
+</body>
+
+</html>
