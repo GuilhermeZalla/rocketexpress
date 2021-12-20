@@ -77,14 +77,14 @@
     right: 315px;
 }
 
-@media screen and (min-width: 901px) and (max-width: 1999px) {
-    .main-header {
+@media screen and (min-width: 600px) and (max-width: 900px){
+    .main-header{
         height: 53px;
     }
 }
 
-@media screen and (min-width: 600px) and (max-width: 900px){
-    .main-header{
+@media screen and (min-width: 901px) and (max-width: 1999px) {
+    .main-header {
         height: 53px;
     }
 }
