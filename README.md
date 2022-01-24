@@ -13,8 +13,11 @@ Rocket Express is a web application created by me to practice my web development
 ![](https://i.imgur.com/0oimduE.gif)
 
 ### GET STARTED 
-![](https://i.imgur.com/qUXy8PY.gif)
+![](https://i.imgur.com/UMlShQA.png)
 
+### USER'S PAGE
+
+![](https://i.imgur.com/wQz2AsQ.png)
 
 ## Built with
 
@@ -40,4 +43,5 @@ The application still missing some features that I'm still developing, some of t
 ## What did I learn?
 This project helped me fix the concepts of HTML, CSS and Javascript and help me gain more skills with code and designing UI. 
 
-**link para o site: [Rocket Express](https://rocketexpress.netlify.app/)**
+
+**Link to site: [Rocket Express](https://rocketexpress.netlify.app/)**
