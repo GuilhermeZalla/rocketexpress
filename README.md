@@ -43,5 +43,7 @@ The application still missing some features that I'm still developing, some of t
 ## What did I learn?
 This project helped me fix the concepts of HTML, CSS and Javascript and help me gain more skills with code and designing UI. 
 
+<br>
 
-**Link to site: [Rocket Express](https://rocketexpress.netlify.app/)**
+#### **Link to site: [Rocket Express](https://rocketexpress.netlify.app/)**
+***
